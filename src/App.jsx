@@ -9,8 +9,8 @@ function App() {
   const secondaryColorRef = useRef()
 
   useEffect(() => {
-    document.documentElement.style.setProperty('--primary',primaryColor);
-    document.documentElement.style.setProperty('--secondary',secondaryColor);
+    document.documentElement.style.setProperty('--primary', primaryColor);
+    document.documentElement.style.setProperty('--secondary', secondaryColor);
   }, [primaryColor, secondaryColor])
   
   const handlePrimaryColorChange = () => {
@@ -30,6 +30,7 @@ function App() {
         <div className='p-2 md:w-1/2'>
           <div className="py-4 w-full h-full flex flex-col items-center bg-gray-200 rounded-lg">
             <h2 className='text-2xl mb-4'>Custom your theme</h2>
+            {/* Custom Color Section */}
             <div className='flex flex-col mb-4 w-2/3 md:w-1/3'>
               <label>Primary Color</label>
               <input value={primaryColor} onChange={() => handlePrimaryColorChange()} ref={primaryColorRef} className="" type="color" />
@@ -45,17 +46,27 @@ function App() {
         <div className='p-2 md:w-1/2'>
           <div className="py-4 w-full h-full flex flex-col items-center bg-gray-200 rounded-lg">
             <h2 className='text-2xl mb-4'>Page Preview</h2>
-            <div className='w-2/3 h-60 flex flex-col justify-between rounded bg-gray-50'>
-              <div className='h-9 flex justify-center items-center rounded-t bg-secondary'>
+            {/* Page Preview */}
+            <div className='w-2/3 flex flex-col items-center justify-between rounded bg-gray-50'>
+              {/* Header */}
+              <div className='w-full h-9 flex justify-center items-center rounded-t bg-secondary'>
                 <p>Header</p>
               </div>
-              <div className='flex justify-center items-center'>
-                <div className='flex flex-col mb-4 text-slate-800 w-11/12'>
+
+              {/* Body */}
+              <div className='flex flex-col justify-center items-center w-11/12 py-4'>
+                <div className='w-full flex flex-col mb-4 text-slate-800'>
                   <label className='text-primary'>Label</label>
-                  <input className="bg-slate-300" type="text" />
+                  <input className="bg-slate-300 rounded p-2" placeholder='Some text' type="text" />
+                </div>
+                <div className='w-full flex flex-row justify-between'>
+                  <button className='bg-primary text-white rounded p-2'>Primary Button</button>
+                  <button className='rounded border border-primary text-primary p-2'>Secondary Button</button>
                 </div>
               </div>
-              <div className='h-16 flex justify-center items-center rounded-b bg-secondary'>
+
+              {/* Footer */}
+              <div className='w-full h-16 flex justify-center items-center rounded-b bg-secondary'>
                 <p>Footer</p>
               </div>
             </div>
