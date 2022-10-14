@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="App bg-slate-900 min-h-screen text-slate-100 flex flex-col justify-center items-center">
-      <h1 className='text-3xl my-2'>Custom Theme Builder</h1>
+      <h1 className='text-3xl my-4'>Custom Theme Builder</h1>
       <div className="w-11/12 flex flex-col md:flex-row">
         <div className='p-2 md:w-1/2'>
           <div className="py-4 w-full h-full flex flex-col items-center bg-slate-700 rounded-lg">
