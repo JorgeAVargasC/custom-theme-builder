@@ -59,8 +59,8 @@ function App() {
                   <label className='text-primary'>Label</label>
                   <input className="bg-slate-300 rounded p-2" placeholder='Some text' type="text" />
                 </div>
-                <div className='w-full flex flex-row justify-between'>
-                  <button className='bg-primary text-white rounded p-2'>Primary Button</button>
+                <div className='w-full flex flex-col md:flex-row justify-between'>
+                  <button className='bg-primary text-white rounded p-2 mb-2 md:mb-0'>Primary Button</button>
                   <button className='rounded border border-primary text-primary p-2'>Secondary Button</button>
                 </div>
               </div>
