@@ -8,6 +8,7 @@ const customColors = {
   'neutral-1': 'var(--neutral-1)',
   'neutral-2': 'var(--neutral-2)',
   'neutral-3': 'var(--neutral-3)',
+  'neutral-4': 'var(--neutral-4)',
 }
 
 module.exports = {
