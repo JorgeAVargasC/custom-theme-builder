@@ -57,9 +57,9 @@ function App() {
           <div className="py-4 w-full h-full flex flex-col items-center bg-slate-700 rounded-lg">
             <h2 className='text-2xl mb-4'>Custom your theme</h2>
             {/* Custom Color Section */}
-            <div className='flex flex-col w-5/6'>
+            <div className='flex flex-col w-5/6 md:grid md:grid-cols-2'>
               {/* Primary Color */}
-              <div className='flex flex-col mb-4'>
+              <div className='flex flex-col mb-4 items-center'>
                 <label className='mb-2'>Primary Color</label>
                 <div className='flex flex-row'>
                   <input type="color" name='primaryColor' value={primaryColor} ref={primaryColorRef} onChange={() => handleThemeChange(primaryColorRef)} className='w-10 h-10 mr-2' />
@@ -67,7 +67,7 @@ function App() {
                 </div>
               </div>
               {/* Secondary Color */}
-              <div className='flex flex-col mb-4'>
+              <div className='flex flex-col mb-4 items-center'>
                 <label className='mb-2'>Secondary Color</label>
                 <div className='flex flex-row'>
                   <input type="color" name='secondaryColor' value={secondaryColor} ref={secondaryColorRef} onChange={() => handleThemeChange(secondaryColorRef)} className='w-10 h-10 mr-2' />
@@ -75,7 +75,7 @@ function App() {
                 </div>
               </div>
               {/* Neutral Color 1 */}
-              <div className='flex flex-col mb-4'>
+              <div className='flex flex-col mb-4 items-center'>
                 <label className='mb-2'>Neutral Color 1</label>
                 <div className='flex flex-row'>
                   <input type="color" name='neutralColor1' value={neutralColor1} ref={neutralColor1Ref} onChange={() => handleThemeChange(neutralColor1Ref)} className='w-10 h-10 mr-2' />
@@ -83,7 +83,7 @@ function App() {
                 </div>
               </div>
               {/* Neutral Color 2 */}
-              <div className='flex flex-col mb-4'>
+              <div className='flex flex-col mb-4 items-center'>
                 <label className='mb-2'>Neutral Color 2</label>
                 <div className='flex flex-row'>
                   <input type="color" name='neutralColor2' value={neutralColor2} ref={neutralColor2Ref} onChange={() => handleThemeChange(neutralColor2Ref)} className='w-10 h-10 mr-2' />
@@ -91,7 +91,7 @@ function App() {
                 </div>
               </div>
               {/* Neutral Color 3 */}
-              <div className='flex flex-col mb-4'>
+              <div className='flex flex-col mb-4 items-center'>
                 <label className='mb-2'>Neutral Color 3</label>
                 <div className='flex flex-row'>
                   <input type="color" name='neutralColor3' value={neutralColor3} ref={neutralColor3Ref} onChange={() => handleThemeChange(neutralColor3Ref)} className='w-10 h-10 mr-2' />
@@ -99,7 +99,7 @@ function App() {
                 </div>
               </div>
               {/* Neutral Color 4 */}
-              <div className='flex flex-col mb-4'>
+              <div className='flex flex-col mb-4 items-center'>
                 <label className='mb-2'>Neutral Color 4</label>
                 <div className='flex flex-row'>
                   <input type="color" name='neutralColor4' value={neutralColor4} ref={neutralColor4Ref} onChange={() => handleThemeChange(neutralColor4Ref)} className='w-10 h-10 mr-2' />
